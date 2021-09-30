@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <link rel="stylesheet" href="vibgyor.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tillana:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <style>
+        nav {
+            background: #0a0a0a !important;
+            color: rgb(5, 5, 5);
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            /* background-color: white; */
+            padding: 8px 10px;
+            border-radius: 5px;
+
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+
+            background-color: #e7ebea;
+            color: rgb(14, 13, 13);
+            transition: .7s;
+            text-decoration: none;
+        }
+
+        nav .logo {
+            font-size: 33px;
+            color: #edf3f2 !important;
+            font-weight: 600;
+            font-family: 'Tillana', cursive;
+        }
+        @media (max-width: 900px) {
+  nav ul {
+    position: fixed;
+    top: 64px;
+    left: -100%;
+    background: rgb(34, 33, 33);
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+
+  .logo {
+    padding-left: 0px;
+    margin-left: -25px;
+  }
+
+  #click:checked ~ ul {
+    left: 0;
+  }
+  nav ul li {
+    margin: 30px 0px;
+  }
+  nav ul li a {
+    font-size: 21px;
+    display: block;
+  }
+  nav ul li a:hover,
+  nav ul li a.active {
+    background: none;
+    color: orange;
+    transition: 0.7s;
+  }
+  .name {
+    width: 100% !important;
+    padding: 8px 0 8px 40px;
+    margin: 10px 0px;
+  }
+  .lock {
+    padding-top: 18px !important;
+  }
+}
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <section id="top2">
+
+    </section>
+    
+
+
+        <nav>
+            <div class="logo">
+               vibgyor
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">&#9776</label>
+            <ul class="menu">
+                <li><a href="vibgyor.html">home</a></li>
+                <li><a href="about.html" class="active">about</a></li>
+                <!-- <li><a href="team.html">team</a></li> -->
+
+                <li><a href="event1.html">Events</a></li>
+                <li><a href="timeline.html">celibrity guest</a></li>
+            </ul>
+        </nav>
+        <section id="about">
+            
+            <div class="container-fluid">
+                <div class="row ">
+                    
+                    
+                    <div class="col-md-6 mt-md-3 mb-md-3 about-second">
+                        <h1>about</h1>
+                        <h2>about</h2>
+                        <p>VIBGYOR is the annual social and cultural festival of IMSEC, a pioneer in the elite institution. It is an opportunity to the students of different domains to showcase their talents with full zeal and zest in diverse fields such as MUSIC, PHOTOGRAPHY, DANCE, PAINTING etc.
+
+                            It is an avenue to be comforted from the routine life and to embrace the fun and frolic embedded with such energetic performance. It is an annual cultural event at a college organised by the student community, involving participants from other colleges as well. Professional performing artists are also typically invited, and a number of competitions are held for students.</p>
+                    </div>
+                    <div class="col-md-6 mt-5 mb-md-3 about-photo">
+                        <img src="./images/about.jpeg" alt="">
+                    </div>
+                </div>   
+            </div>     
+        </section>
+       
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6  footer1 ">
+        
+                        <div class="social">
+                            <span>
+                                <a href="https://twitter.com/Saddamk42605178"><img src="./images/tw.png" alt="" srcset=""></a>
+                            </span>
+                            <span>
+                                <a href="https://www.facebook.com/profile.php?id=100040552720381"><img src="./images/fb.png" alt="" srcset=""></a>
+                            </span>
+                            <span>
+                                <a href="https://www.instagram.com/saddu_06/"><img src="./images/ig.png" alt="" srcset=""></a>
+                            </span>
+                        </div>
+                        <p>Designed and Developed by Saddam ali khan</p>
+                    </div>
+                    <div class="col-md-6 footer1">
+                        <a href="#top2">
+        
+                            <div class="arrow">
+                                
+                            </div>
+                        </a>
+                        
+                    </div>
+                    
+        
+                </div>
+            </div>
+        
+        
+        </section>
+         
+</html>

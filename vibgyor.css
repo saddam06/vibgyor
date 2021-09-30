@@ -1,0 +1,442 @@
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+h1,
+h2 {
+  /* color: white; */
+}
+p {
+  color: white;
+}
+body {
+  background: #0d0e0d;
+}
+/* navigation starts here */
+label {
+  color: black;
+  font-family: cursive;
+}
+nav {
+  height: 70px;
+  padding: 0;
+  margin: 0;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 15px 0px 15px;}
+nav ul {
+  display: flex;
+  list-style: none;
+  z-index: 10;
+}
+nav ul li {
+  margin: 0px 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  /* background-color: white; */
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+.main2 {
+  background-color: #e6f2b5 !important;
+  /* border: 1px solid black; */
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #f2f8f7;
+  color: rgb(10, 10, 10);
+  transition: 0.7s;
+  text-decoration: none;
+}
+nav .logo {
+  font-size: 33px;
+  color: white !important;
+  font-weight: 600;
+  font-family: "Tillana", cursive;
+}
+.menu-btn {
+  display: none;
+}
+#click {
+  display: none !important;
+}
+/* ---------------mediascreen here---------------- */
+@media (max-width: 900px) {
+  nav{
+    background-color:rgb(15, 15, 15) ;
+    /* scroll-behavior: none; */
+    padding-left: 40px;
+    padding-bottom: 12px;
+
+    
+    /* position: fixed; */
+  }
+  nav ul {
+    position: fixed;
+    top: 64px;
+    left: -100%;
+    background: rgb(8, 8, 8);
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+
+  .logo {
+    padding-left: 0px;
+    margin-left: -25px;
+  }
+
+  #click:checked ~ ul {
+    left: 0;
+    background: rgb(34, 33, 33);
+
+  }
+  nav ul li {
+    margin: 30px 0px;
+  }
+  nav ul li a {
+    font-size: 21px;
+    display: block;
+  }
+  nav ul li a:hover,
+  nav ul li a.active {
+    background: none;
+    color: orange;
+    transition: 0.7s;
+  }
+  .name {
+    width: 100% !important;
+    padding: 8px 0 8px 40px;
+    margin: 10px 0px;
+  }
+  .lock {
+    padding-top: 18px !important;
+  }
+
+  .input-name {
+    margin: 20px auto;
+  }
+  .input-name span {
+    margin: 20px 0 !important;
+  }
+  .about-second h1 {
+    font-size: 5rem !important;
+    position: relative;
+    top: 0px;
+    left: 10px;
+    color: #80808052;
+    letter-spacing: 2px;
+    font-family: cursive;
+    padding: 0%;
+    margin: 0;
+    width: 5rem;
+  }
+  .about-second h2 {
+    position: relative !important;
+    top: -3.5rem !important;
+  }
+  .menu-btn {
+    font-size: 29px;
+    color: #f5f8f8;
+    display: block;
+    /* margin-left: 2rem !important; */
+    padding: 0px;
+  }
+}
+@media (max-width: 720px) {
+  #home-page h1 {
+    font-size: 5rem !important;
+    color: white;
+    display: flex;
+    /* text-align: center; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    margin-top: 8rem;
+  }
+
+  #home-page p {
+    color: white;
+    font-family: cursive;
+    font-size: 1rem !important;
+  }
+  .schedule {
+    margin: 6px 6px !important;
+  }
+}
+
+/* homepage starting here - -------------------------- */
+#home-page {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/homepage.jpg");
+  /* background: linear-gradient((rgba(0,0,0,.6),rgba(22, 22, 22, 0.6),url(guitar.jpg)); */
+
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  text-align: center;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+#home-page h1 {
+  font-size: 10rem;
+  color: white;
+  display: flex;
+  /* text-align: center; */
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  /* margin-top: 3rem; */
+}
+#home-page p {
+  color: white;
+  font-family: cursive;
+  font-size: 2rem;
+}
+/* --------------------------------------------gallery styling starts from here -------------------------*/
+#gallery {
+  text-align: center;
+  color: white;
+}
+#gallery h1 {
+  margin-bottom: 2rem;
+}
+#video-gallery h1 {
+  margin: 1rem 0;
+}
+#video-gallery {
+  text-align: center;
+}
+.image a {
+  width: 400px;
+  height: 300px;
+}
+
+.image img {
+  width: 100%;
+  margin-bottom: 2rem;
+  transition: 0.2s;
+}
+.image img:hover {
+  transform: scale(1.1);
+}
+/*------------------------------- about------------------- */
+.about-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+.about-second h1 {
+  font-size: 8rem;
+  position: relative;
+  top: 0px;
+  left: 2rem;
+  color: #80808052;
+  letter-spacing: 2px;
+  font-family: cursive;
+  padding: 0;
+  margin: 0px !important;
+  display: block;
+}
+.about-second h2 {
+  position: relative;
+  top: -5rem;
+  left: 5rem;
+  border-bottom: 2px solid;
+  width: 5.6rem;
+  padding: 0;
+  margin: 0px !important;
+}
+.about-second {
+  background-color: #161716;
+  color: white;
+}
+.about-photo img {
+  width: 100% !important;
+  margin: 0px;
+  padding: 0px;
+  /* border:7px solid rgb(119, 108, 108) */
+}
+.about-photo {
+  background: ("./images/robert-katzki-GlG2C3HnAdw-unsplash.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-color: #161716;
+}
+/* ...........................schedule styling here ...................................*/
+#event {
+  text-align: center;
+  margin-top: 1rem;
+}
+.sch-btn{
+  width: 100px;
+  text-align: center;margin: auto;
+  padding: 2px;
+  border: none;
+  color: #141414;
+  background-color: #febd69;
+  text-transform: capitalize;
+}
+.event img {
+  width: 100%;
+  border: 2px solid rgb(230, 223, 223);
+}
+.event {
+  text-align: center;
+  margin-top: 2rem !important;
+}
+.event h2 {
+  font-size: 24px;
+}
+/* schedule------------- */
+.schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 0px;
+  box-sizing: border-box;
+  /* box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.61); */
+  background-color: #101112;
+  transition: 0.3s;
+  color: #febd69;
+  /* border-left: 2px solid white; */
+}
+.schedule:hover {
+  /* transform: translateY(-14px); */
+  /* box-shadow: -1px -2px 6px rgba(0, 0, 0, 0.377); */
+  /* border-left: none; */
+  /* background: black; */
+}
+.fa {
+  font-size: 3rem !important;
+  text-align: center;
+  color: #0a0a0a;
+  /* border: 1px solid white; */
+  width: 100px;
+  margin: auto;
+  padding: 25px 0px;
+  border-radius: 49%;
+  background-color: #f5f1ec;
+}
+.schedule h2 {
+  color: #dadada;
+}
+.schedule input {
+  width: 100px;
+  color: #febd69 !important;
+  background-color: rgb(17, 16, 16);
+  outline: none;
+  border: 1px solid#febd69;
+  margin: auto;
+}
+#schedule-page {
+  background-color: #dad6d6;
+}
+.schedule{
+    margin:  25px 0 ;
+}
+/* ----footer--- */
+#footer span img{
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  margin-top: 10px;
+  
+}
+/* .detail{
+  background-color: rgba(64, 224, 208, 0.267);
+  padding: 10px;
+  width: 90%;
+  margin-bottom: 10%;
+  text-align: justify;
+  width: 350px; */
+
+
+.footer1{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between !important; */
+  /* justify-content: space-around; */
+  
+  background-color: black;
+  text-align: center;
+}
+#footer{
+  background-color: black;
+}
+
+
+div.arrow {
+  width: 6vmin;
+  height: 6vmin;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: rotate(-45deg);
+  /* background-color: #0a0a0a; */
+}
+div.arrow::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-width: 0.8vmin 0.8vmin 0 0;
+  border-style: solid;
+  border-color: #fafafa;
+  transition: 0.2s ease;
+  display: block;
+  transform-origin: 100% 0;
+}
+div.arrow:after {
+  content: "";
+  float: left;
+  position: relative;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  border-width: 0 0.8vmin 0 0;
+  border-style: solid;
+  border-color: #fafafa;
+  transform-origin: 100% 0;
+  transition: 0.2s ease;
+}
+div.arrow:hover::after {
+  transform: rotate(45deg);
+  border-color: orange;
+  height: 120%;
+}
+div.arrow:hover::before {
+  border-color: orange;
+  transform: scale(0.8);
+}
